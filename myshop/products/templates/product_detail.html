@@ -1,0 +1,6 @@
+<h1>{{ object.name }}</h1>
+<p>{{ object.description }}</p>
+<p>Цена: {{ object.price }} Руб</p>
+<a href="{% url 'product_update' object.pk %}">Редактировать</a>
+<a href="{% url 'product_delete' object.pk %}">Удалить</a>
+<a href="{% url 'product_list' %}">Список товаров</a>
